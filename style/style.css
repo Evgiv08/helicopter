@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Proxima Nova - Extrabld";
+  src: url(../fonts/ProximaNovaExtraBold/proximanova-extrabold.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: "Proxima Nova - Semibold";
+  src: url(../fonts/ProximaNovaSemiBold/proximanova-semibold.woff);
+  font-weight: 400; }
+.container {
+  max-width: 1555px;
+  margin: 0 auto; }
+
+.flex {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between; }
+  .flex .container__logo {
+    display: -ms-flex;
+    display: flex;
+    margin-top: 35px; }
+    .flex .container__logo img {
+      margin-right: 12px;
+      height: 40px;
+      width: 56px; }
+    .flex .container__logo .container__logo__rotate {
+      transform: rotate(180deg);
+      transition: 1s; }
+    .flex .container__logo p {
+      width: 95px;
+      color: #000000;
+      font-family: "Proxima Nova - Extrabld";
+      font-size: 20px;
+      line-height: 22px; }
+  .flex .container__menu img {
+    display: none; }
+  .flex .container__menu nav {
+    margin-top: 50px; }
+    .flex .container__menu nav a {
+      text-decoration: none;
+      color: #000000;
+      font-family: "Proxima Nova - Extrabld";
+      font-size: 16px;
+      margin-right: 55px; }
+      .flex .container__menu nav a:last-child {
+        margin-right: 0; }
+      .flex .container__menu nav a:hover {
+        color: #20aa97;
+        box-sizing: border-box;
+        position: relative; }
+        .flex .container__menu nav a:hover:before {
+          position: absolute;
+          top: -10px;
+          content: "";
+          border-top: 2px solid black;
+          width: 15px;
+          height: 2px; }
+
+.service {
+  text-align: center; }
+  .service h1 {
+    color: #000000;
+    font-family: "Proxima Nova - Extrabld";
+    font-size: 100px;
+    letter-spacing: -1px;
+    margin-top: 160px; }
+    .service h1 span {
+      color: #20aa97; }
+  .service .service__intro {
+    margin-top: 119px;
+    color: #585858;
+    font-family: "Proxima Nova - Extrabld";
+    font-size: 20px;
+    line-height: 36px; }
+  .service .margin_p {
+    color: #585858;
+    font-family: "Proxima Nova - Extrabld";
+    font-size: 20px;
+    line-height: 36px; }
+  .service .service__firstline {
+    display: flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .service .service__firstline div:hover svg {
+      transition: .5s;
+      width: 85px;
+      height: 85px; }
+    .service .service__firstline div:hover:nth-child(5) svg {
+      width: 116px;
+      height: 90px; }
+    .service .service__firstline div:hover:nth-child(9) svg {
+      width: 120px;
+      height: 82px; }
+    .service .service__firstline div {
+      width: 20%;
+      height: 240px;
+      margin-top: 115px; }
+    .service .service__firstline p {
+      margin-top: 55px;
+      color: #000000;
+      font-family: "Proxima Nova - Extrabld";
+      font-size: 20px;
+      font-weight: 600; }
+    .service .service__firstline span {
+      color: #585858;
+      font-family: "Proxima Nova - Semibold";
+      font-size: 18px;
+      line-height: 24px; }
+
+h2 {
+  color: #000000;
+  font-family: "Proxima Nova - Extrabld";
+  font-size: 60px;
+  margin-top: 146px;
+  margin-bottom: 24px;
+  text-align: center; }
+  h2 span {
+    color: #20aa97; }
+
+.ouroffer {
+  display: flex;
+  display: -ms-flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .ouroffer div {
+    width: 35%; }
+    .ouroffer div svg {
+      margin-left: 33px;
+      margin-top: 106px; }
+      .ouroffer div svg:hover {
+        transition: .8s;
+        transform: rotate(-19deg); }
+    .ouroffer div span {
+      color: #585858;
+      font-family: "Proxima Nova - Semibold";
+      font-size: 18px; }
+    .ouroffer div p {
+      margin-top: 76px;
+      margin-bottom: 10px;
+      color: #000000;
+      font-family: "Proxima Nova - Extrabld";
+      font-size: 20px; }
+    .ouroffer div:last-child {
+      width: 85%; }
+
+footer {
+  margin-top: 131px;
+  height: 120px;
+  background-color: #000000;
+  display: flex;
+  display: -ms-flex;
+  justify-content: center;
+  padding-top: 56px;
+  box-sizing: border-box; }
+  footer p {
+    color: #ffffff;
+    font-family: "Proxima Nova - Semibold";
+    font-size: 14px;
+    font-weight: 400; }
+    footer p span {
+      color: #20aa97;
+      font-family: "Proxima Nova - Extrabld";
+      font-weight: 600; }
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  .container {
+    width: 95%; }
+
+  header {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px; }
+
+  .flex .container__menu {
+    position: relative; }
+    .flex .container__menu img {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      display: block;
+      width: 40px; }
+    .flex .container__menu .show {
+      display: block; }
+    .flex .container__menu nav {
+      margin-top: 105px; }
+      .flex .container__menu nav a {
+        display: block;
+        margin-left: 120px;
+        font-size: 25px;
+        line-height: 35px; }
+        .flex .container__menu nav a:first-child {
+          margin-left: 120px; }
+        .flex .container__menu nav a:hover:before {
+          border-top: none; }
+
+  .nav_tablet {
+    display: none; }
+
+  .service .service__firstline div {
+    width: 50%; }
+
+  .ouroffer div {
+    width: 90%; }
+    .ouroffer div:last-child {
+      width: 90%; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%; }
+
+  header {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px; }
+
+  .flex .container__menu {
+    position: relative; }
+    .flex .container__menu img {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      display: block;
+      width: 40px; }
+    .flex .container__menu .show {
+      display: block; }
+    .flex .container__menu nav {
+      margin-top: 105px; }
+      .flex .container__menu nav a {
+        display: block;
+        margin-left: 0;
+        font-size: 25px;
+        line-height: 35px; }
+        .flex .container__menu nav a:first-child {
+          margin-left: 0; }
+        .flex .container__menu nav a:hover:before {
+          border-top: none; }
+
+  h2 {
+    text-align: left;
+    margin-left: 25px; }
+
+  .nav_tablet {
+    display: none; }
+
+  .service h1 {
+    text-align: left;
+    margin-left: 25px; }
+  .service .service__firstline div {
+    width: 45%; }
+  .service .margin_p {
+    margin-top: 20px; }
+
+  .ouroffer div {
+    width: 90%; }
+    .ouroffer div:last-child {
+      width: 90%; }
+
+  footer p {
+    width: 80%;
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
